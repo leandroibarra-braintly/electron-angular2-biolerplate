@@ -13,7 +13,8 @@
 		"prepare": "cp -a electron/. dist",
 		"electron": "npm run prepare && electron dist",
 		"packagewin": "npm run build && npm run prepare && ./node_modules/electron-packager/cli.js dist App --platform=win32 --arch=ia32 --out=dist-app --overwrite",
-		"packagemac": "npm run build && npm run prepare && ./node_modules/electron-packager/cli.js dist App --platform=darwin --arch=all --out=dist-app --overwrite"
+		"packagemac": "npm run build && npm run prepare && ./node_modules/electron-packager/cli.js dist App --platform=darwin --arch=all --out=dist-app --overwrite",
+		"packagelin": "npm run build && npm run prepare && ./node_modules/electron-packager/cli.js dist App --platform=linux --arch=all --out=dist-app --overwrite"
 	},
 	"private": true,
 	"dependencies": {

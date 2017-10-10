@@ -8,7 +8,7 @@ npm install -g angular-cli
 
 
 # install
-npm install
+npm install --exact-versions
 
 # run webpack dev server
 npm start
@@ -22,10 +22,14 @@ npm run build
 # preview electron (without angular build)
 npm run electron
 
+# create electron package for windows (build included)
+npm run packagewin
+
 # create electron package for darwin (build included)
 npm run packagemac
 
-# create electron package for windows (build included)
-npm run packagewin
+# create electron package for linux (build included)
+npm run packagelin
+
 
 ```
